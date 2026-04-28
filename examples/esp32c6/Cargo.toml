@@ -8,7 +8,15 @@ version      = "0.1.0"
 name = "esp32c6"
 path = "./src/bin/main.rs"
 
+[[bin]]
+name = "joy_featherwing"
+path = "./src/bin/joy_featherwing.rs"
+
 [dependencies]
+adafruit-seesaw = { path = "../..", default-features = false, features = [
+  "defmt",
+  "device_joy_featherwing",
+] }
 esp-hal = { version = "~1.0", features = ["defmt", "esp32c6"] }
 
 

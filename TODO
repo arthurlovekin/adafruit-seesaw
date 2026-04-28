@@ -1,0 +1,7 @@
+Please help me implement the following:
+1. Add support for the Adafruit Joy FeatherWing to the crate.
+2. Write an example for the ESP32C6 that uses the Joy FeatherWing (in the examples/esp32c6 folder)
+
+For help, check out the references in the reference/ folder:
+- original cpp implementation
+- joy featherwing overview

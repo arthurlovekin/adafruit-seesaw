@@ -1,6 +1,8 @@
 #[cfg(feature = "device_arcade_button_1x4")]
 mod arcade_button_1x4;
 mod generic_device;
+#[cfg(feature = "device_joy_featherwing")]
+mod joy_featherwing;
 pub mod macros;
 #[cfg(feature = "device_neokey_1x4")]
 mod neokey_1x4;
@@ -21,6 +23,8 @@ use crate::{
 #[cfg(feature = "device_arcade_button_1x4")]
 pub use arcade_button_1x4::*;
 pub use generic_device::*;
+#[cfg(feature = "device_joy_featherwing")]
+pub use joy_featherwing::*;
 #[cfg(feature = "device_neokey_1x4")]
 pub use neokey_1x4::*;
 #[cfg(feature = "device_neorotary4")]
